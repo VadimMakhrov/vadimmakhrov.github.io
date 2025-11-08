@@ -1,0 +1,12 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+	align-items: center;
+}
+
+.scene {
+  position: relative;
+  background-repeat: no-repeat;
+}
+
