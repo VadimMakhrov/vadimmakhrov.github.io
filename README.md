@@ -1,1 +1,0 @@
-# vadimmakhrov.github.io
