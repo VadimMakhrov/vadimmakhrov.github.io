@@ -1,0 +1,302 @@
+/* Добавлям шрифты */
+
+/* @font-face {
+    font-family: 'Round';
+    src: url('fonts/Round.woff2') format('woff2');
+    font-variation-settings: 'wdth' 0 1000;
+}
+
+@font-face {
+    font-family: 'Def';
+    src: url('fonts/DefVF.woff2') format('woff2');
+    font-variation-settings: "wdth" 0 800, "wght" 0 800;
+} */
+
+.protected {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+/* Общие настройки */
+body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+/* Заголовок */
+h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin: 0 0 30px 0;
+    line-height: 1;
+}
+
+h1 span {
+    font-size: 2.5rem;
+}
+
+.header-info {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.meta p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Сетка контента */
+.grid-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 100px;
+    margin-bottom: 50px;
+}
+
+.grid-details {
+    margin-bottom: 40px;
+}
+
+/* Cпойлер js начало */
+.spoiler-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.spoiler-header p {
+    margin: 0;
+
+}
+
+.spoiler-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.spoiler-btn::after {
+    content: '▶';
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    transition: transform 0.5s ease;
+}
+
+.spoiler-btn.active::after {
+    transform: rotate(90deg);
+}
+
+.spoiler-btn span {
+    color: #e0e0e0;
+    font-size: 1rem;
+}
+
+.spoiler-panel {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.spoiler-panel.show {
+    max-height: 2000px;
+    opacity: 1;
+}
+
+.controls.spoiler {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.controls.spoiler.show {
+    max-height: 2000px;
+    opacity: 1;
+}
+
+.spoiler-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spoiler-container p {
+    background-color: #353535;
+    font-variation-settings: 'wdth' 0;
+    font-size: 4rem;
+    margin: 2px;
+    width: 80px;
+    text-align: center;
+}
+/* Cпойлер js конец */
+
+/* Списки и текст */
+h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+ul {
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+p {
+    margin-top: 0;
+}
+
+.hero-text {
+    margin-bottom: 80px;
+}
+
+.hero-text#slovo p {
+    font-size: 9rem;
+    line-height: 0.9;
+    font-variation-settings: 'wdth' 0;
+    margin-bottom: 20px;
+}
+
+.hero-text#round p {
+    font-family: 'Round';
+    font-size: 4rem;
+    line-height: 0.9;
+    font-variation-settings: 'wdth' 0;
+    margin-bottom: 20px;
+}
+
+.hero-text#def p {
+    font-family: 'Def';
+    font-size: 6rem;
+    line-height: 0.9;
+    font-variation-settings: "wght" 0, "wdth" 0;
+    margin-bottom: 20px;
+}
+
+.education {
+    margin-top: 60px;
+}
+
+.education p {
+    line-height: 0.5;
+}
+
+/* Раздел образование */
+.edu-item {
+    margin-bottom: 30px;
+}
+
+.date {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Ссылки и контакты */
+.socials p a {
+    display: inline-flex;
+    align-items: center;
+}
+
+.socials img {
+    width: 30px;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.socials a span {
+    color: inherit;
+    text-decoration: underline;
+    margin-left: 20px;
+}
+
+footer .large-email a {
+    text-decoration: underline;
+    color: inherit;
+    font-size: 1rem;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Кастомизация ползунка */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 150px;
+    height: 4px;
+    background: gray;
+    cursor: pointer;
+}
+
+/* Для Chrome, Safari, Edge */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    background: #ffffff;
+    cursor: pointer;
+    border-radius: 50%;
+    padding-bottom: 4px;
+}
+
+/* Для Firefox */
+input[type="range"]::-moz-range-thumb {
+    height: 16px;
+    width: 16px;
+    background: #ffffff;
+    border: none;
+    border-radius: 50%;
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+    background: gray;
+}
+
+/* Убираем синюю обводку при клике в Chrome */
+input[type="range"]:focus {
+    outline: none;
+}
+
+/* Адаптивность для мобилок */
+@media (max-width: 600px) {
+    .grid-content, .grid-details, .header-info {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .hero-text p {
+        font-size: 6rem;
+    }
+}
