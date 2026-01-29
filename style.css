@@ -89,7 +89,8 @@ h1 span {
     cursor: pointer;
     display: flex;
     align-items: center;
-    padding: 5px;
+    /* padding: 5px; */
+    padding: 0;
 }
 
 .spoiler-btn::after {
@@ -296,7 +297,33 @@ input[type="range"]:focus {
         gap: 20px;
         flex-direction: column;
     }
-    .hero-text p {
+
+
+    .spoiler-header {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    /* input[type="range"] {
+        width: 100px;
+    } */
+
+    .hero-text#slovo p {
         font-size: 6rem;
+    }
+    .hero-text#def p {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 400px) {
+    /* input[type="range"] {
+        width: 50px;
+    } */
+    .hero-text#slovo p {
+        font-size: 4rem;
+    }
+    .hero-text#def p {
+        font-size: 2rem;
     }
 }
