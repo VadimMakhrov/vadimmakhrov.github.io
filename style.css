@@ -6,11 +6,7 @@
     font-variation-settings: 'wdth' 0 1000;
 }
 
-@font-face {
-    font-family: 'Def';
-    src: url('fonts/DefVF.woff2') format('woff2');
-    font-variation-settings: "wdth" 0 800, "wght" 0 800;
-} */
+*/
 
 .protected {
     opacity: 0;
@@ -22,7 +18,8 @@
 body {
     background-color: #1a1a1a;
     color: #e0e0e0;
-    font-family: 'Helvetica', 'Arial', sans-serif;
+    /* font-family: 'Helvetica', 'Arial', sans-serif; */
+    font-family: 'RoundVF';
     line-height: 1.5;
     margin: 0;
     padding: 40px 20px;
@@ -89,7 +86,6 @@ h1 span {
     cursor: pointer;
     display: flex;
     align-items: center;
-    /* padding: 5px; */
     padding: 0;
 }
 
@@ -298,15 +294,10 @@ input[type="range"]:focus {
         flex-direction: column;
     }
 
-
     .spoiler-header {
         flex-direction: column;
         align-items: normal;
     }
-
-    /* input[type="range"] {
-        width: 100px;
-    } */
 
     .hero-text#slovo p {
         font-size: 6rem;
@@ -317,9 +308,6 @@ input[type="range"]:focus {
 }
 
 @media (max-width: 400px) {
-    /* input[type="range"] {
-        width: 50px;
-    } */
     .hero-text#slovo p {
         font-size: 4rem;
     }
